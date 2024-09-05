@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_low">#00FF00</color> <!-- 연두색 -->
+    <color name="color_medium">#38AA38</color> <!-- 초록색 -->
+    <color name="color_high">#FFFF00</color> <!-- 노란색 -->
+    <color name="color_very_high">#FFA500</color> <!-- 주황색 -->
+    <color name="color_critical">#FF0000</color> <!-- 빨간색 -->
+</resources>

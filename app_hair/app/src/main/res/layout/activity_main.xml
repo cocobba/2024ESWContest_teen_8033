@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b2d30"
+    tools:context=".Activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="위험"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이대로 가다간 위험합니다"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="미세각질"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toStartOf="@+id/data1"
+            app:layout_constraintTop_toTopOf="@+id/data1"
+            app:layout_constraintBottom_toBottomOf="@+id/data1"
+            android:layout_marginEnd="15dp"/>
+
+        <ProgressBar
+            android:id="@+id/data1"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_bar_rounded"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subtitle"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="50dp"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="피지과다"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toStartOf="@+id/data2"
+            app:layout_constraintTop_toTopOf="@+id/data2"
+            app:layout_constraintBottom_toBottomOf="@+id/data2"
+            android:layout_marginEnd="15dp"/>
+
+        <ProgressBar
+            android:id="@+id/data2"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_bar_rounded"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/data1"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="50dp"/>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="모낭사이홍반"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toStartOf="@+id/data3"
+            app:layout_constraintTop_toTopOf="@+id/data3"
+            app:layout_constraintBottom_toBottomOf="@+id/data3"
+            android:layout_marginEnd="15dp"/>
+
+        <ProgressBar
+            android:id="@+id/data3"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_bar_rounded"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/data2"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="50dp"/>
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="모낭홍반/농포"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toStartOf="@+id/data4"
+            app:layout_constraintTop_toTopOf="@+id/data4"
+            app:layout_constraintBottom_toBottomOf="@+id/data4"
+            android:layout_marginEnd="15dp"/>
+
+        <ProgressBar
+            android:id="@+id/data4"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_bar_rounded"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/data3"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"/>
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비듬"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toStartOf="@+id/data5"
+            app:layout_constraintTop_toTopOf="@+id/data5"
+            app:layout_constraintBottom_toBottomOf="@+id/data5"
+            android:layout_marginEnd="15dp"/>
+
+        <ProgressBar
+            android:id="@+id/data5"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_bar_rounded"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/data4"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="50dp"/>
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="탈모"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toStartOf="@+id/data6"
+            app:layout_constraintTop_toTopOf="@+id/data6"
+            app:layout_constraintBottom_toBottomOf="@+id/data6"
+            android:layout_marginEnd="15dp"/>
+
+        <ProgressBar
+            android:id="@+id/data6"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_bar_rounded"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/data5"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="50dp"/>
+
+        <LinearLayout
+            android:id="@+id/card_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/data6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/card_container"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
