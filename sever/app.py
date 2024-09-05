@@ -75,11 +75,7 @@ def upload_files():
                 (predictions[5]+1.5) / 4 * 100   # value_6 결과
             )
            # print(탈모지수_list)
-    if sw == 0:
-        탈모지수_list = (55,20,10,30,66,70)
-        sw =1
-    else:
-        탈모지수_list = (30,31,70,80,40,20)
+
         
     print(탈모지수_list)
     response = {
